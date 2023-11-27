@@ -2,6 +2,7 @@
 const startBttn = document.querySelector('button[data-start]');
 const stopBttn = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
+const colorValue=document.querySelector('span')
 let intervalId = null;
 // start button function with interval 
 startBttn.addEventListener("click", () => { 
@@ -9,7 +10,9 @@ startBttn.addEventListener("click", () => {
   stopBttn.disabled = false;
 
  intervalId= setInterval(() => {
-    body.style.backgroundColor = getRandomHexColor();
+   const newColor = getRandomHexColor();
+  body.style.backgroundColor = newColor;
+  colorValue.textContent = newColor;
   },1500)
 })
 //stop button function with clearing the interval
