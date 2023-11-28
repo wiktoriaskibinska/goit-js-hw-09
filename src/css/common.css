@@ -52,3 +52,15 @@ span{
   font-size: 30px;
   margin-left: 10px;
 }
+
+.field{
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+#datetime-picker{
+  height:50px;
+  border-radius: 15px;
+  border:2px solid black;
+}
+
