@@ -1,4 +1,4 @@
-// Opisany w dokumentacji
+import Notiflix from "notiflix";
 import flatpickr from "flatpickr";
 // Dodatkowy import stylów
 import "flatpickr/dist/flatpickr.min.css";
@@ -25,11 +25,11 @@ const options = {
       const selectedInUnix = selectedDates[0].getTime();
 
       if (selectedInUnix <= options.defaultDate.getTime()) {
-          window.alert("Please choose a date in the future");
+          Notiflix.Notify.failure('Please choose a date in the future');
           startBttn.disabled = true;
       }
       else {
-          window.alert("The date you selected is correct");
+          Notiflix.Notify.success('The date you selected is correct');
           startBttn.disabled = false;
 
       };
