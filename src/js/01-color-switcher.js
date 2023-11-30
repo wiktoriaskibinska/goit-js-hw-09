@@ -4,6 +4,7 @@ const stopBttn = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
 const colorValue=document.querySelector('span')
 let intervalId = null;
+stopBttn.disabled = true;
 // start button function with interval 
 startBttn.addEventListener("click", () => { 
   startBttn.disabled = true;
