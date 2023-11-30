@@ -62,8 +62,7 @@ function startBttnOnClick() {
         
         
     }
-    }, 1000);  
-  startBttn.removeEventListener("click", startBttnOnClick);
+    }, 1000); 
   
 };
 //
