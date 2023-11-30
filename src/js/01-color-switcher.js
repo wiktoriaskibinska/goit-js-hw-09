@@ -14,7 +14,7 @@ startBttn.addEventListener("click", () => {
    const newColor = getRandomHexColor();
   body.style.backgroundColor = newColor;
   colorValue.textContent = newColor;
-  },1500)
+  },1000)
 })
 //stop button function with clearing the interval
 stopBttn.addEventListener("click", () => {

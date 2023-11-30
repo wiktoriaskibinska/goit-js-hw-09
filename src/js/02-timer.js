@@ -57,12 +57,14 @@ function startBttnOnClick() {
 
         if (ms < 1000) {
         dateInput.disabled = false;
-        startBttn.disabled = false;
+        
         clearInterval(timerId);
         
         
     }
     }, 1000);  
+  startBttn.removeEventListener("click", startBttnOnClick);
+  
 };
 //
 function convertMs(ms) {
